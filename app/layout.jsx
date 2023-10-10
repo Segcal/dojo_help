@@ -1,8 +1,8 @@
 import Navbar from './components/Navbar';
 import './globals.css'
-import { Rubik } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
-const rubik = Rubik({ subsets: ['latin'], weight: ["300", "600", "800"] })
+const poppins = Poppins({ subsets: ['latin'], weight: ["300", "600", "800"] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={rubik.className}>
+      <body className={poppins.className}>
         <Navbar />
         {children}
       </body>
